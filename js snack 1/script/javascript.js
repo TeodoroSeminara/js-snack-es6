@@ -1,3 +1,4 @@
+
 // Snack 1
 // Creare un array di oggetti:
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
@@ -36,7 +37,5 @@ for ( let i in bike ){
     }
 }
 console.log(pesoBike.nome, pesoBike.peso);
-
-
 
 
