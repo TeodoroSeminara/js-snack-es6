@@ -61,12 +61,3 @@ function numGenerator() {
 
 
 
-//     let pesoBike = bike[0];
-
-// for ( let i in bike ){
-//     if (bike[i].peso < pesoBike.peso){
-//         pesoBike = bike[i];
-//     }
-// }
-// console.log(pesoBike.nome, pesoBike.peso);
-
