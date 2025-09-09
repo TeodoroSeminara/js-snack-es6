@@ -26,12 +26,7 @@ const bike = [
         "peso": 23
     }
 ];
-let newBike=     {
-        "nome": "Mountain Bike",
-        "peso": 7
-    };
 
-bike.push(newBike);
 
 let pesoBike = bike[0];
 
@@ -40,7 +35,7 @@ for ( let i in bike ){
         pesoBike = bike[i];
     }
 }
-console.log(pesoBike.peso);
+console.log(pesoBike.nome, pesoBike.peso);
 
 
 
