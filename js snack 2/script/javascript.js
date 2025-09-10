@@ -6,7 +6,7 @@
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 
-
+// Genero array di oggetti
 let squadre = [
     {
         "nome": "Gli Scaldapanchine",
@@ -40,10 +40,10 @@ let squadre = [
     },
 ];
 
-
+// Dichiaro array nuovo
 let resultArray = [];
-let test = {};
 
+// For In per generare numeri random e pushare un oggetto
 for (let i in squadre){
     squadre[i].puntiFatti = numGenerator(0, 100);
     squadre[i].falliSubiti = numGenerator(0, 50);
@@ -54,7 +54,7 @@ for (let i in squadre){
 console.log(resultArray, test );
 
 
-
+// Generatore di numeri random
 function numGenerator(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }
