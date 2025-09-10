@@ -45,8 +45,8 @@ let resultArray = [];
 let test = {};
 
 for (let i in squadre){
-    squadre[i].puntiFatti = numGenerator();
-    squadre[i].falliSubiti = numGenerator();
+    squadre[i].puntiFatti = numGenerator(0, 100);
+    squadre[i].falliSubiti = numGenerator(0, 50);
     
     resultArray.push({"nome": squadre[i].nome, "falliSubiti": squadre[i].falliSubiti})  
 }
@@ -55,8 +55,8 @@ console.log(resultArray, test );
 
 
 
-function numGenerator() {
-    return Math.floor(Math.random() * 500 + 1);
+function numGenerator(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
 }
 
 
